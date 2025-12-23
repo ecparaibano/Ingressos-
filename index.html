@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Ingressos EC Paraibano</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Ingressos EC Paraibano</h1>
+<h2>EC PARAIBANO X AUTO ESPORTE</h2>
+
+<h3>Sombra</h3>
+<div class="ingressos">
+  <button onclick="selecionar(50)">Inteira • R$50</button>
+  <button onclick="selecionar(25)">Meia • R$25</button>
+  <button onclick="selecionar(30)">Social • R$30</button>
+  <button onclick="selecionar(10)">Sócio Torcedor • R$10</button>
+</div>
+
+<h3>Cadeiras</h3>
+<div class="ingressos">
+  <button onclick="selecionar(150)">Inteira • R$150</button>
+  <button onclick="selecionar(75)">Meia • R$75</button>
+  <button onclick="selecionar(80)">Social • R$80</button>
+  <button onclick="selecionar(30)">Sócio Torcedor • R$30</button>
+</div>
+
+<div id="resumo" style="display:none;">
+  <p>Ingresso selecionado: <strong>R$ <span id="valorEscolhido"></span></strong></p>
+  <button class="comprar" onclick="comprar()">Comprar</button>
+</div>
+
+<p class="info">Mulheres e crianças até 12 anos não pagam</p>
+
+<hr>
+
+<p>Ingressos vendidos: <strong><span id="vendidos">0</span></strong></p>
+<p>Renda total: <strong>R$ <span id="renda">0</span></strong></p>
+
+<p class="obs">Venda fictícia • Projeto virtual</p>
+
+<script src="main.js"></script>
+</body>
+</html>
